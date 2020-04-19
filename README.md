@@ -40,23 +40,13 @@ Simple facebook login button
 
 ## Installation & usage
 
-Install paper-facebook-login with Bower
+Install paper-facebook-login with NPM
 
 ```sh
-$ bower i vision-4/paper-facebook-login --save
+$ npm install --save @shifang2013/paper-facebook-login@3.0.0
 ```
 
-Import it into the `<head>` of your page
-
-```html
-<link rel="import" href="/bower_components/paper-facebook-login/paper-facebook-login.html">
-```
-
-Then use paper-facebook-login in your project
-
-```html
-<paper-facebook-login app-id="[[yourAppId]]"></paper-facebook-login>
-```
+Please refere to demo/index.html for Example. 
 
 ### Polyfills for cross-browser support
 

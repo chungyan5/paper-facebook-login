@@ -7,21 +7,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/vision-4/paper-facebook-login.git"
+    "url": "https://github.com/chungyan5/paper-facebook-login.git"
   },
-  "homepage": "https://github.com/vision-4/paper-facebook-login/",
-  "name": "paper-facebook-login",
-  "version": "2.0.0",
+  "homepage": "https://github.com/chungyan5/paper-facebook-login/",
+  "name": "@shifang2013/paper-facebook-login",
+  "version": "3.0.0",
   "main": "paper-facebook-login.js",
   "scripts": {
     "test": "wct",
     "posttest": "eslint .",
     "demo": "browser-sync start -c bs-config.js"
   },
-  "author": "v1s10n_4 <romain.daniel@epitech.eu>",
+  "author": "Shi Fang Super Developer1 <supdevs1.sf@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vision-4/paper-facebook-login/issues"
+    "url": "https://github.com/chungyan5/paper-facebook-login/issues"
   },
   "devDependencies": {
     "browser-sync": "^2.9.0",

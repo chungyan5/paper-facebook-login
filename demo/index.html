@@ -6,10 +6,13 @@
     <title>paper-facebook-login Demo</title>
 
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^1.0.0/webcomponents-loader.js"></script>
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-    <link rel="import" href="../../polymer/polymer.html">
 
-    <link rel="import" href="../paper-facebook-login.html">
+    <script type="module">
+        import '@polymer/iron-demo-helpers/demo-snippet';
+        import '@polymer/polymer/polymer-legacy.js';
+    </script>
+
+    <script type="module" src="../paper-facebook-login.js"></script>
 
     <style>
         body {
@@ -46,7 +49,7 @@
             <template>
                 <dom-bind>
                     <template is="dom-bind">
-                        <paper-facebook-login app-id="479069922240685" user="{{user}}"></paper-facebook-login>
+                        <paper-facebook-login app-id="pls_update_to_your_app_id" user="{{user}}"></paper-facebook-login>
                         <div style="margin-top: 20px">
                             <img src$="[[user.picture.data.url]]">
                             <div>[[user.first_name]] [[user.last_name]]</div>
@@ -89,7 +92,7 @@
                     <paper-facebook-login id="fbLogin"
                                           text="Connectez-vous avec Facebook"
                                           language="fr_FR"
-                                          app-id="479069922240685"
+                                          app-id="pls_update_to_your_app_id"
                                           user="{{user}}"
                                           scope="email,user_age_range,user_birthday,user_friends,user_gender,user_hometown,user_link,user_location,user_likes,user_photos,user_posts,user_tagged_places,user_videos,user_events">
                     </paper-facebook-login>

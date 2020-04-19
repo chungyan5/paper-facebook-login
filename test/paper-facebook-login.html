@@ -6,10 +6,10 @@
 
     <!-- Setup WCT -->
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^1.0.0/webcomponents-loader.js"></script>
-    <script src="../../web-component-tester/browser.js"></script>
+    <script src="../../wct-browser-legacy/browser.js"></script>
 
     <!-- Import paper-facebook-login  -->
-    <link rel="import" href="../paper-facebook-login.html">
+    <script type="module" src="../paper-facebook-login.js"></script>
 
   </head>
   <body>
@@ -20,16 +20,17 @@
       </template>
     </test-fixture>
 
-    <script>
-      describe('<paper-facebook-login>', () => {
-        var component;
+    <script type="module">
+import '../paper-facebook-login.js';
+describe('<paper-facebook-login>', () => {
+  var component;
 
-        beforeEach(() => component = fixture('default'));
+  beforeEach(() => component = fixture('default'));
 
-        it('is okay', function() {
-          expect(component).to.be.ok;
-        });
-      });
-    </script>
+  it('is okay', function() {
+    expect(component).to.be.ok;
+  });
+});
+</script>
   </body>
 </html>

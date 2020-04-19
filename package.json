@@ -1,16 +1,5 @@
 {
-  "name": "paper-facebook-login",
   "description": "Simple facebook login button",
-  "version": "2.0.0",
-  "private": true,
-  "main": "paper-facebook-login.html",
-  "scripts": {
-    "test": "wct",
-    "posttest": "eslint .",
-    "demo": "browser-sync start -c bs-config.js"
-  },
-  "author": "v1s10n_4 <romain.daniel@epitech.eu>",
-  "license": "MIT",
   "keywords": [
     "web-components",
     "custom-element",
@@ -20,6 +9,17 @@
     "type": "git",
     "url": "https://github.com/vision-4/paper-facebook-login.git"
   },
+  "homepage": "https://github.com/vision-4/paper-facebook-login/",
+  "name": "paper-facebook-login",
+  "version": "2.0.0",
+  "main": "paper-facebook-login.js",
+  "scripts": {
+    "test": "wct",
+    "posttest": "eslint .",
+    "demo": "browser-sync start -c bs-config.js"
+  },
+  "author": "v1s10n_4 <romain.daniel@epitech.eu>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vision-4/paper-facebook-login/issues"
   },
@@ -27,12 +27,23 @@
     "browser-sync": "^2.9.0",
     "eslint": "^3.14.1",
     "flow-bin": "^0.76.0",
-    "web-component-tester": "^6.0.0"
+    "web-component-tester": "^6.0.0",
+    "@polymer/iron-demo-helpers": "^3.0.0",
+    "wct-browser-legacy": "^1.0.1",
+    "@webcomponents/webcomponentsjs": "^2.0.0"
   },
   "dependencies": {
     "@babel/core": "^7.0.0-beta.54",
     "@babel/preset-env": "^7.0.0-beta.54",
     "babel-loader": "^8.0.0-beta.4",
-    "webpack": "^4.16.1"
+    "webpack": "^4.16.1",
+    "@polymer/polymer": "^3.0.0",
+    "@polymer/paper-button": "^3.0.0"
+  },
+  "resolutions": {
+    "inherits": "2.0.3",
+    "samsam": "1.1.3",
+    "supports-color": "3.1.2",
+    "type-detect": "1.0.0"
   }
 }

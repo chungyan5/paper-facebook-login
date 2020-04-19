@@ -1,11 +1,9 @@
 dist: trusty
 language: node_js
 node_js:
-- '8'
-before_script:
-  - npm install -g bower web-component-tester
-  - bower install
-script: xvfb-run wct
+  - '8'
+before_script: npm install -g web-component-tester
+script: xvfb-run wct --module-resolution=node --npm
 addons:
   firefox: latest
   apt:
@@ -13,3 +11,4 @@ addons:
       - google-chrome
     packages:
       - google-chrome-stable
+
